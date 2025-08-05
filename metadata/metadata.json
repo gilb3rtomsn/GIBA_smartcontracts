@@ -1,0 +1,11 @@
+{
+  "name": "GIBA NFT",
+  "description": "Atividade 4 Disciplina DAPP UnyLeya",
+  "image": "https://example.com/image.png",
+  "attributes": [
+    {
+      "trait_type": "Level",
+      "value": "1"
+    }
+  ]
+}
