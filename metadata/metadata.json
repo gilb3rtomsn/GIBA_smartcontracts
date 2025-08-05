@@ -1,0 +1,11 @@
+{
+  "name": "Custom NFT",
+  "description": "An example NFT for Atividade 4",
+  "image": "https://example.com/image.png",
+  "attributes": [
+    {
+      "trait_type": "Level",
+      "value": "1"
+    }
+  ]
+}
