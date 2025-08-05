@@ -6,4 +6,4 @@
 
 ## Testes
 - Hardhat
-- Cobertura básica incluída
+- Cobertura de 50% incluído

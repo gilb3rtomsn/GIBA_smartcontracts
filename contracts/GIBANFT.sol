@@ -5,12 +5,12 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-contract CustomNFT is ERC721URIStorage, Ownable {
+contract GibaNFT is ERC721URIStorage, Ownable {
     IERC20 public paymentToken;
     uint256 public price;
     uint256 public tokenCounter;
 
-    constructor(address tokenAddress, uint256 _price) ERC721("CustomNFT", "CNFT") {
+    constructor(address tokenAddress, uint256 _price) ERC721("GibaNFT", "GNFT") {
         paymentToken = IERC20(tokenAddress);
         price = _price;
         tokenCounter = 0;
@@ -21,7 +21,7 @@ contract CustomNFT is ERC721URIStorage, Ownable {
     }
 
     function mint(string memory tokenURI) public {
-        require(paymentToken.transferFrom(msg.sender, owner(), price), "Payment failed");
+        require(paymentToken.transferFrom(msg.sender, owner(), price), "O pagamento falhou");
         _safeMint(msg.sender, tokenCounter);
         _setTokenURI(tokenCounter, tokenURI);
         tokenCounter++;
