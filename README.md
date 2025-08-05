@@ -1,8 +1,8 @@
-# Smart Contracts - Atividade 4 - Dicsiplina DApp
+# Atividade 4 - Dicsiplina DApp - Smart Contracts c/ NFT
 
 ## Contratos
-- CustomToken (ERC-20)
-- CustomNFT (ERC-721)
+- GIBAToken (ERC-20)
+- GIBANFT (ERC-721)
 
 ## Testes
 - Hardhat
